@@ -1,0 +1,146 @@
+	product_category	attribute_name	attribute_value
+0	AMPSEAL Connectors	Current	Up to 17 amps gold, up to 8 amps tin
+1	AMPSEAL Connectors	Temperature	Operating at temperatures -40C to +125C for gold plated, -40C to +105C for tin plated
+2	AMPSEAL Connectors	Durability	See note. Mate and unmate specimens for 10 cycles at maximum rate of 600 cycles per hour.
+3	AMPSEAL Connectors	Physical Shock	No discontinuities of 1 microsecond or longer duration. TE Spec 109-26-1. Subject mated specimens to 50 Gs half-sine shock pulses of 11 milliseconds duration. Three shocks in each direction applied along 3 mutually perpendicular planes, 18 total shocks. See Fig 5 in TE product document 108-1329.
+4	AMPSEAL Connectors	Insulation Resistance	100 megohms minimum. TE Spec 109-28-4. Test between adjacent contacts of mated specimens.
+5	AMPSEAL Connectors	Immersion	Leakage current not to exceed 50 micro-amperes at 48 volts DC. TE Spec 109-74-5. Immerse specimens to a depth of 100 mm in 5% salt water at a temperature of 23  5 C for 1 hour. Check between adjacent circuits and each surface to reference electrode.
+6	AMPSEAL Connectors	Random Vibration	See note. TE Spec 109-21-7, Condition G, except 10-500 Hz frequency range. Subject mated specimens to 10 Gs for 8 hours each plane.
+7	AMPSEAL Connectors	Voltage	250 volts AC
+8	AMPSEAL Connectors	Durability	TE Spec 109-27. Mate and unmate specimens for 10 cycles at maximum rate of 600 cycles per hour. See note.
+9	AMPSEAL Connectors	Current Rating	Up to 17 amps gold, up to 8 amps tin, consult TE product document 108-1329.
+10	AMPSEAL Connectors	Contact Retention	TE Spec 109-30. Apply an axial load of 115 N to contacts in the axial direction with wedge lock in locked position. Contacts shall not dislodge.
+11	AMPSEAL Connectors	Crimp Tensile Strength	Contact Size  Tensile Strength:Size 20   80 lbsSize 18    90 lbsSize 16    150 lbs
+12	AMPSEAL 16 Connectors	Current	Up to 13 amps
+13	AMPSEAL 16 Connectors	Temperature	Operating at temperatures -40C to +125C
+14	AMPSEAL 16 Connectors	Durability	See note. 50 cycles.
+15	AMPSEAL 16 Connectors	Insulation Resistance	20 megohms minimum. SAE J2030 6.3. Insulation resistance at 1000 volts DC adjacent terminals measured after 60 seconds or until stabilization occurs.
+16	AMPSEAL 16 Connectors	Immersion	IP67 rating
+17	AMPSEAL 16 Connectors	Random Vibration	No discontinuities. See note. EIA-364-28 Subject mated specimens to 21 Gs rms between 25 to 2000 Hz. Twenty hours in each of three mutually perpendicular planes.
+18	AMPSEAL 16 Connectors	Voltage	250 volts DC
+19	AMPSEAL 16 Connectors	Durability	SAE J2030 6.11. 50 cycles. See note.
+20	AMPSEAL 16 Connectors	Current Rating	Up to 13 amps, consult TE product document 108-2184.
+21	AMPSEAL 16 Connectors	Contact Retention	IEC 512-8, Test 51a. Apply axial load of 111 N to contacts at a maximum rate of 10 N per second (or 50mm per minute) and hold for 10 seconds. Contacts shall not dislodge.
+22	AMPSEAL 16 Connectors	Crimp Tensile Strength	USCAR 21 @ 50mm/min
+23	AMPSEAL 16 Connectors	Wire Gauge  Tensile Strength	18 AWG  90 N Min16 AWG   120 N Min14 AWG   180 N Min
+24	Circular DIN Connectors	Current	Up to 40 amps
+25	Circular DIN Connectors	Temperature	Operating at temperatures -40C to +120C for plastic parts, short term up to +140C defined in the standard ISO 15170
+26	Circular DIN Connectors	Durability	20 cycles, max. testing requirement in the standard ISO 15170, former DIN 72585
+27	Circular DIN Connectors	Insulation Resistance	No flash over or breakdown between every two contacts or between every contact and outer contour of the housing permitted at 1000 volts AC and 50 or 60 Hz for 60 seconds.
+28	Circular DIN Connectors	Immersion	No ingress of water is allowed, acc. to DIN 40050-9 IPX7, IPX9K
+29	Circular DIN Connectors	Vibration	According to standard ISO 15170, former DIN 72585
+30	Circular DIN Connectors	Dielectric Withstanding Voltage	No flash over or breakdown between every two contacts or between every contact and outer contour of the housing permitted at 1000 volts AC and 50 or 60 Hz for 60 seconds.
+31	Circular DIN Connectors	Flange Seal	Silicone rubber
+32	Circular DIN Connectors	Housing	Glass filled PBT and PA
+33	Circular DIN Connectors	Durability	Maximum mating cycles10 (tin)50 (silver)100 (gold)
+34	Circular DIN Connectors	Current Rating	Contact Size  Max. Current:2.5 mm   up to 40 ampsContact Retention(in housing)
+35	Circular DIN Connectors	Contact Size  Min. Load	2.5 mm   > 90 N with secondary retention up to 100 N
+36	Circular DIN Connectors	Crimp Tensile Strength	Contact Size  Tensile Strength:.35 mm2  ? 50 N.5 mm2  ? 60 N1.0 mm2  ? 100 N1.5 mm2  ? 150 N2.5 mm2  ? 200 N4.0 mm2  ? 250 N
+37	Circular DIN Connectors	Description Color Part Number	Mounting ring for pin housing Black 965687-1MOUNTING RING
+38	HDSCS Connectors	Current	Up to 40 amps
+39	HDSCS Connectors	Temperature	Operating at temperatures -40C to +140C
+40	HDSCS Connectors	Durability	Up to 10 cycles (tin), up to 50 cycles (silver), up to 100 cycles (gold), see individual product specifications for additional details.
+41	HDSCS Connectors	Insulation Resistance	500 volts DC, test acc. to ISO 16750-2 (4.12).
+42	HDSCS Connectors	Immersion	IP67 rating, IP6K9K with cover, for tab housings with flange, only by observing mounting instructions.
+43	HDSCS Connectors	Random Vibration	No physical damage of housings and contacts, no derogation of function; the connection may not open at 177 m/s2, 94 hours for each of the three axes. See product specification 108-94020 for full specifications.
+44	HDSCS Connectors	Voltage	Up to 42 volts DC
+45	HDSCS Connectors	Durability	10 cycles (tin)50 cycles (silver)100 cycles (gold)
+46	HDSCS Connectors	Current Rating	Contact Size Max. Current:1.5K                   up to 20 amps2.8   up to 40 amps6.3/4.8K up to 40 amps
+47	HDSCS Connectors	Contact Retention	Contact Size  Min. Load:1.5K   40/60 N2.8    80 N6.3/4.8K  80 N
+48	HDSCS Connectors	Crimp Tensile Strength	Contact Size  Tensile Strength:1.5K.22 mm2  ? 32 N.35 mm2  ? 50 N.50 mm2  ? 60 N.75 mm2  ? 85 N1.0 mm2  ? 108 N1.25 mm2 ? 135 N (16 AWG)1.5 mm2  ? 135 N2.8 .22 mm2  ? 28 N.35 mm2  ? 50 N.50 mm2  ? 60 N .75 mm2  ? 85 N1.0 mm2 ? 108 N1.5 mm2  ? 150 N2.5 mm2  ? 200 N   6.3./4.8K .35 mm2   ? 50 N.50 mm2  ? 60 N.75 mm2   ? 85 N1.0 mm2   ? 108 N1.5 mm2   ? 150 N  2.5 mm2  ? 200 N4.0 mm2   ? 310 N6.0 mm2   ? 450 N
+49	LEAVYSEAL Connectors	Current	Up to 40 amps
+50	LEAVYSEAL Connectors	Temperature	Operating at temperatures ranges -40C to +140C, see individual product specifications for specific range.
+51	LEAVYSEAL Connectors	Durability	Up to 20 cycles (tin), up to 50 cycles (silver), up to 100 cycles (gold), see individual product specifications for additional details.
+52	LEAVYSEAL Connectors	Insulation Resistance	500 volts DC, see individual product specifications for testing conditions.
+53	LEAVYSEAL Connectors	Immersion	IP67 rating, IP6K9K with cover
+54	LEAVYSEAL Connectors	Voltage	42 volts AC/DC
+55	LEAVYSEAL Connectors	Dielectric Withstanding Voltage	No flash over or breakdown between adjacent contacts and outer contour of the housing permitted at 500 volts AC and 50 or 60 Hz for 60 seconds.Flammability Product with a UL 94 V0 rated material is available
+56	LEAVYSEAL Connectors	Flange Seal	Silicone rubber
+57	LEAVYSEAL Connectors	Durability	10 cycles (tin)50 cycles (silver)100 cycles (gold)
+58	LEAVYSEAL Connectors	Current Rating	Contact Size Max. Current:1.5K                   up to 20 amps2.8   up to 40 amps6.3/4.8K up to 40 amps
+59	LEAVYSEAL Connectors	Contact Retention	Contact Size  Min. Load:1.5K   40/60 N2.8    80 N6.3/4.8K  80 N
+60	Superseal 1.0 Connectors	Current	Up to 15 amps
+61	Superseal 1.0 Connectors	Temperature	Operating at temperatures -40C to +125C
+62	Superseal 1.0 Connectors	Durability	After cap housing is connected, the plug housing is mated and then 78.4 N force is applied in a rocking motion. 25 test cycles.
+63	Superseal 1.0 Connectors	Insulation Resistance	100 megohms minimum. Test between adjacent contacts and between contact and earth with insulation resistance meter of 500 volts DC.
+64	Superseal 1.0 Connectors	Immersion	Per JIS D0203
+65	Superseal 1.0 Connectors	Random Vibration	Tested in each of three mutually perpendicular axis. See Fig 8 in product document 108-78140.
+66	Superseal 1.0 Connectors	Dielectric Withstanding Voltage	Insulation does not breakdown at 1000 volts AC or 1600 volts DC for duration of 1 minute between contacts and between contact and earth.
+67	Superseal 1.0 Connectors	Voltage	250 volts AC, DC
+68	Superseal 1.0 Connectors	Grommet	Silicone rubber
+69	Superseal 1.0 Connectors	Housing	Thermoplastic
+70	Superseal 1.0 Connectors	Durability	25 cycles, per Kojiri (rocking motion) durability test
+71	Superseal 1.0 Connectors	Current Rating	Up to 15 amps, consult TE product specification 108-78140Contact Retention (between contact and housing) 1.0mm ? 58.8N
+72	Superseal 1.0 Connectors	Crimp Tensile Strength	Contact Size  Tensile Strength:.5mm2    ? 88.2N.85 mm2   ? 127.4N1.25 mm2   ? 176.4N1.0 MM STAMPED & FORMED CONTACTS FOR SUPERSEAL 1.0
+73	AEC Series	Temperature	Operating at temperatures -55C to +125C
+74	AEC Series	Durability	No electrical or mechanical defects after 100 cycles of engagement and disengagement.
+75	AEC Series	Vibration	No unlocking or unmating and exhibits no mechanical or physical damage after sinusoidal vibration levels of 20 Gs at 10 to 2000 Hz in each of the three mutually perpendicular planes. No electrical discontinuities longer than 1 microsecond.
+76	AEC Series	Fluid Resistance	Connectors show no damage when exposed to most fluids used in industrial applications.
+77	AEC Series	Insulation Resistance	1000 megohms minimum at 25C.
+78	AEC Series	Immersion	IP68 rating
+79	AEC Series	Moisture Resistance	Properly wired and mated connections will withstand immersion under three feet of water without loss of electronic qualities or leakage.
+80	AEC Series	Dielectric Withstanding Voltage	Current leakage less than 2 milliamps at 1500 volts AC.
+81	DRB Series	Temperature	Operating at temperatures -55C to +125C
+82	DRB Series	Durability	No electrical or mechanical defects after 100 cycles of engagement and disengagement.
+83	DRB Series	Vibration	No unlocking or unmating and exhibits no mechanical or physical damage after sinusoidal vibration levels of 20 Gs at 10 to 2000 Hz in each of the three mutually perpendicular planes. No electrical discontinuities longer than 1 microsecond.
+84	DRB Series	Fluid Resistance	Connectors show no damage when exposed to most fluids used in industrial applications.
+85	DRB Series	Insulation Resistance	1000 megohms minimum at 25C.
+86	DRB Series	Immersion	IP68 rating
+87	DRB Series	Moisture Resistance	Properly wired and mated connections will withstand immersion under three feet of water without loss of electronic qualities or leakage.
+88	DRB Series	Dielectric Withstanding Voltage	Current leakage less than 2 milliamps at 1500 volts AC.
+89	DRC Series	Temperature	Operating at temperatures -55C to +125C
+90	DRC Series	Durability	No electrical or mechanical defects after 100 cycles of engagement and disengagement.
+91	DRC Series	Vibration	No unlocking or unmating and exhibits no mechanical or physical damage after sinusoidal vibration levels of 20 Gs at 10 to 2000 Hz in each of the three mutually perpendicular planes. No electrical discontinuities longer than 1 microsecond.
+92	DRC Series	Fluid Resistance	Connectors show no damage when exposed to most fluids used in industrial applications.
+93	DRC Series	Insulation Resistance	1000 megohms minimum at 25C.
+94	DRC Series	Immersion	IP68 rating
+95	DRC Series	Moisture Resistance	Properly wired and mated connections will withstand immersion under three feet of water without loss of electronic qualities or leakage.
+96	DRC Series	Dielectric Withstanding Voltage	Current leakage less than 2 milliamps at 1500 volts AC.
+97	DT Family	Grommet	Silicone rubberReceptacle :Interfacial Seal:Silicone rubber
+98	DT Family	Receptacle	Threaded :Inserts:Stainless steel
+99	DT Family	Shell	Glass filled PA
+100	DT Family	Wedgelocks	Glass filled PBT
+101	DT Family	Temperature	Operating at temperatures -55C to +125C
+102	DT Family	DTMH series	-55C to +150C
+103	DT Family	Durability	No electrical or mechanical defects after 100 cycles of engagement and disengagement.
+104	DT Family	Vibration	No unlocking or unmating and exhibits no mechanical or physical damage after sinusoidal vibration levels of 20 Gs at 10 to 2000 Hz in each of the three mutually perpendicular planes. No electrical discontinuities longer than 1 microsecond.
+105	DT Family	Fluid Resistance	Connectors show no damage when exposed to most fluids used in industrial applications.
+106	DT Family	Insulation Resistance	1000 megohms minimum at 25C.
+107	DT Family	Immersion	IP68 rating
+108	DT Family	Moisture Resistance	Properly wired and mated connections will withstand immersion under three feet of water without loss of electronic qualities or leakage.
+109	DT Family	Dielectric Withstanding Voltage	Current leakage less than 2 milliamps at 1500 volts AC.
+110	HD10 Series	Temperature	Operating at temperatures -55C to +125C
+111	HD10 Series	Durability	No electrical or mechanical defects after 100 cycles of engagement and disengagement.
+112	HD10 Series	Vibration	No unlocking or unmating and exhibits no mechanical or physical damage after sinusoidal vibration levels of 20 Gs at 10 to 2000 Hz in each of the three mutually perpendicular planes. No electrical discontinuities longer than 1 microsecond.
+113	HD10 Series	Fluid Resistance	Connectors show no damage when exposed to most fluids used in industrial applications.
+114	HD10 Series	Insulation Resistance	1000 megohms minimum at 25C.
+115	HD10 Series	Immersion	IP68 rating
+116	HD10 Series	Moisture Resistance	Properly wired and mated connections will withstand immersion under three feet of water without loss of electronic qualities or leakage.
+117	HD10 Series	Dielectric Withstanding Voltage	Current leakage less than 2 milliamps at 1500 volts AC.
+118	HD30 & HDP20 Series	Temperature	Operating at temperatures -55C to +125C
+119	HD30 & HDP20 Series	Durability	No electrical or mechanical defects after 100 cycles of engagement and disengagement.
+120	HD30 & HDP20 Series	Vibration	No unlocking or unmating and exhibits no mechanical or physical damage after sinusoidal vibration levels of 20 Gs at 10 to 2000 Hz in each of the three mutually perpendicular planes. No electrical discontinuities longer than 1 microsecond.
+121	HD30 & HDP20 Series	Fluid Resistance	Connectors show no damage when exposed to most fluids used in industrial applications.
+122	HD30 & HDP20 Series	Insulation Resistance	1000 megohms minimum at 25C.
+123	HD30 & HDP20 Series	Immersion	IP68 rating
+124	HD30 & HDP20 Series	Moisture Resistance	Properly wired and mated connections will withstand immersion under three feet of water without loss of electronic qualities or leakage.
+125	HD30 & HDP20 Series	Dielectric Withstanding Voltage	Current leakage less than 2 milliamps at 1500 volts AC.
+126	HD30 & HDP20 Series	Shell Size Overall Length	A
+127	HD30 & HDP20 Series	Overall Height	B
+128	HD30 & HDP20 Series	Overall Length	C
+129	STRIKE Series	Temperature	Operating at temperatures -55C to +125C
+130	STRIKE Series	Durability	No electrical or mechanical defects after 100 cycles of engagement and disengagement.
+131	STRIKE Series	Vibration	No unlocking or unmating and exhibits no mechanical or physical damage after sinusoidal vibration levels of 20 Gs at 10 to 2000 Hz in each of the three mutually perpendicular planes. No electrical discontinuities longer than 1 microsecond.
+132	STRIKE Series	Fluid Resistance	Connectors show no damage when exposed to most fluids used in industrial applications.
+133	STRIKE Series	Insulation Resistance	1000 megohms minimum at 25C.
+134	STRIKE Series	Immersion	IP68 rating
+135	STRIKE Series	Moisture Resistance	Properly wired and mated connections will withstand immersion under three feet of water without loss of electronic qualities or leakage.
+136	STRIKE Series	Dielectric Withstanding Voltage	Current leakage less than 2 milliamps at 1500 volts AC.
+137	STRIKE Series	Thermal Cycle	No cracking, chipping or leaking after 20 test cycles from -55C to +125C.
+138	STRIKE Series	Flange Seal	Silicone rubber
+139	STRIKE Series	Plug Grommet	Silicone rubberReceptacle :Threaded :Inserts:Brass:Shell:Glass filled PBT
+140	DEUTSCH Common Contacts	Durability	No electrical or mechanical defects after 100 cycles of engagement and disengagement.Current Rating (Contact current rating at 125 C continuous)
+141	DEUTSCH Common Contacts	Contact Size Max. Current	Size 20  7.5 ampsSize 16  13 ampsSize 12  25 ampsSize 8  60 ampsSize 4  100 ampsContact Retention (Solid and Stamped & Formed)
+142	DEUTSCH Common Contacts	Contacts withstand a minimum load of	20 lbs (89 N) for size 2025 lbs (111 N) for size 1630 lbs (133 N) for size 1235 lbs (156 N) for size 835 lbs (156 N) for size 4
+143	DEUTSCH Common Contacts	Crimp Tensile Strength (Solid)	Contact Size Tensile Strength:Size 20  20 lbsSize 16  25 lbsSize 12  70 lbsSize 8  90 lbsSize 4  300 lbs Crimp Tensile Strength (Stamped & Formed)
+144	DEUTSCH Common Contacts	Contact Size Tensile Strength	Size 20  20 lbsSize 16  25 lbsSize 12  70 lbs

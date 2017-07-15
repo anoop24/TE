@@ -1,0 +1,40 @@
+INDUSTRIAL & COMMERCIAL TRANSPORTATION /// TERMINALS AND CONNECTORS
+AMPSEAL Connectors
+AMPSEAL Connector Overview
+AMPSEAL connectors provide rugged reliability and environmental 
+sealing. They are available in cable plugs and PCB mount headers that 
+are designed to stand up to high-temperature underhood applications.
+The pre-assembled receptacle housing connector features built-in contact 
+sealing and an integral interfacial seal that protects mated connectors.
+APPLICABLE PRODUCT DOCUMENTATION
+Additional documentation is available for assistance with AMPSEAL connector products. The following TE 
+Connectivity document numbers may be helpful:
+54285-2 (Catalog Section) 
+108-1329 (Product Specification) 
+114-16016 (Application Specification) 
+408-3229 (Instruction Sheet)  
+408-9592 (Instruction Sheet, Tooling)
+408-9999 (Instruction Sheet, Tooling)
+AMPSEAL CONNECTOR PERFORMANCE SPECIFICATIONS 
+Current: Up to 17 amps gold, up to 8 amps tin
+Temperature: Operating at temperatures -40°C to +125°C for gold 
+plated, -40°C to +105°C for tin plated
+Durability: See note. Mate and unmate specimens for 10 cycles 
+at maximum rate of 600 cycles per hour.
+Physical Shock: No discontinuities of 1 microsecond or longer duration. TE 
+Spec 109-26-1. Subject mated specimens to 50 G’s half-sine 
+shock pulses of 11 milliseconds duration. Three shocks in each 
+direction applied along 3 mutually perpendicular planes, 18 
+total shocks. See Fig 5 in TE product document 108-1329.
+Insulation Resistance: 100 megohms minimum. TE Spec 109-28-4. Test between 
+adjacent contacts of mated specimens.
+Immersion: Leakage current not to exceed 50 micro-amperes at 48 volts DC. 
+TE Spec 109-74-5. Immerse specimens to a depth of 100 mm in 5% 
+salt water at a temperature of 23 ± 5° C for 1 hour. Check between 
+adjacent circuits and each surface to reference electrode.
+Random Vibration: See note. TE Spec 109-21-7, Condition G, except 10-500 Hz frequency 
+range. Subject mated specimens to 10 Gs for 8 hours each plane. 
+Voltage: 250 volts AC
+Note: Shall meet visual requirements, show no physical damage and shall meet requirements of additional tests as specified 
+in Test Sequence in Figure 3 of TE product document 108-1329.
+

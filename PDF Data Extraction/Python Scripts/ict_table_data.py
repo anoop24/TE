@@ -19,7 +19,7 @@ def convertPdfToImage(pdf):
     newPdf = prefix + '_GS.pdf'
     cmd = "convert -density 600 " + newPdf + " " + prefix + ".jpg"
     subprocess.call(cmd, shell=True)
-    subprocess.call('cls', shell=True)
+    os.system('cls')
     return [f for f in glob.glob(os.path.join('working', '%s*' % prefix)) if '.jpg' in f]
 #------------------------------------------------------------------------------------------------------------------------------------------------#
 def getImageData(pdfImage):
@@ -122,8 +122,8 @@ def getActualTables(imageData, potentialTables):
         horizontalBorders = getHorizontalBorders(imageData, potentialTable)
         if len(horizontalBorders) > 0:
             # adding the external vertical borders
-            potentialTable = [[horizontalBorders[0][0], horizontalBorders[0][0]+1, horizontalBorders[0][2], horizontalBorders[1][3]]] + potentialTable
-            potentialTable.append([horizontalBorders[-1][1], horizontalBorders[-1][1]-1, horizontalBorders[-1][2], horizontalBorders[-1][3]])
+            potentialTable = [[horizontalBorders[0][0], horizontalBorders[0][0]+1, horizontalBorders[0][2], horizontalBorders[-1][3]]] + potentialTable
+            potentialTable.append([horizontalBorders[-1][1], horizontalBorders[-1][1]-1, horizontalBorders[0][2], horizontalBorders[-1][3]])
             tables.append(potentialTable)
     return tables
 #------------------------------------------------------------------------------------------------------------------------------------------------#
@@ -158,7 +158,7 @@ def getFinalCells(actualCells, pdfImage):
     for actualCell in actualCells:
         cellMergeCount = int(round(1.0*(actualCell[3]-actualCell[2])/(1.0*minCellHeight)))
         image = PIL.Image.open(pdfImage[0])
-        imageCrop = image.crop((actualCell[0], actualCell[2], actualCell[1], actualCell[3]))
+        imageCrop = image.crop((actualCell[0]-50, actualCell[2], actualCell[1], actualCell[3]))
         cellValue = pytesseract.image_to_string(imageCrop)
         finalCells.append([actualCell, cellValue, cellMergeCount])
     return finalCells
@@ -229,7 +229,7 @@ def getParentHeaders(headerZone, imageData, actualTable, pdfImage):
     p = imageData[2]
     for y in range(headerZone[2], headerZone[3]):
         greyPoints = []
-        for x in range(headerZone[0]-10, headerZone[1]+10):
+        for x in range(actualTable[1][0]-10, headerZone[1]+10):
             r, g, b = p[x,y][0], p[x,y][1], p[x,y][2]
             if r < 150 and g < 150 and b < 150:
                 greyPoints.append([x,y])
@@ -300,67 +300,74 @@ def isTopRowHeaders(actualTable, actualCells, imageData):
 #------------------------------------------------------------------------------------------------------------------------------------------------#
 
 directory = os.getcwd()
-for pdfPage in range(18, 19):
+for pdfPage in range(15, 255):
     pdf = directory + '\\Catalogs\\ICT_Catalog_%d.pdf' %(pdfPage)
-    subprocess.call('cls', shell=True)
+    os.system('cls')
     try:
+        print 'Page : ' + str(pdfPage) + '...converting pdf to image',
         pdfImage = convertPdfToImage(pdf)
+        os.system('cls')
+
+        print 'Page : ' + str(pdfPage) + '...getting product category',
         product_category = pytesseract.image_to_string(PIL.Image.open(pdfImage[0]).crop((0,0,5000,500)))
+        os.system('cls')
+
+        print 'Page : ' + str(pdfPage) + '...getting image data',
         imageData = getImageData(pdfImage)
+        os.system('cls')
+
+        print 'Page : ' + str(pdfPage) + '...getting all vertical borders',
         verticalBorders = getVerticalBorders(imageData)
+        os.system('cls')
+
+        print 'Page : ' + str(pdfPage) + '...getting potential table vertical borders',
         potentialTables = getPotentialTables(verticalBorders)
+        os.system('cls')
+
+        print 'Page : ' + str(pdfPage) + '...getting actual table vertical borders',
         actualTables = getActualTables(imageData, potentialTables)
+        os.system('cls')
+
         counter = 0
-        print 'Page : ' + str(pdfPage)
         for actualTable in actualTables:
             counter += 1
-            sys.stdout.write("\033[K")
-            sys.stdout.write("Table: %d ...getting previous table bottom" % (counter))
-            sys.stdout.flush()
+            print 'Page : ' + str(pdfPage) + '\nTable : ' + str(counter) + '...getting previous table bottom',
             if actualTables.index(actualTable) > 0:
                 prevActualTable = actualTables[actualTables.index(actualTable)-1]
                 prevTableBottom = prevActualTable[0][3]
             else:
                 prevTableBottom = 500
+            os.system('cls')
 
-            sys.stdout.write("\033[K")
-            sys.stdout.write("Table: %d ...getting horizontal split borders" % (counter))
-            sys.stdout.flush()
+            print 'Page : ' + str(pdfPage) + '\nTable : ' + str(counter) + '...getting horizontal split borders',
             hSplitBorders = getSplitHorizontalBorders(actualTable, imageData)
+            os.system('cls')
 
-            sys.stdout.write("\033[K")
-            sys.stdout.write("Table: %d ...getting actual cells" % (counter))
-            sys.stdout.flush()
+            print 'Page : ' + str(pdfPage) + '\nTable : ' + str(counter) + '...getting actual cells',
             actualCells = getActualCells(hSplitBorders)
+            os.system('cls')
 
-            sys.stdout.write("\033[K")
-            sys.stdout.write("Table: %d ...getting actual cells after removing top header row" % (counter))
-            sys.stdout.flush()
+            print 'Page : ' + str(pdfPage) + '\nTable : ' + str(counter) + '...getting actual cells after removing top header row',
             actualCells = isTopRowHeaders(actualTable, actualCells, imageData)
+            os.system('cls')
 
-            sys.stdout.write("\033[K")
-            sys.stdout.write("Table: %d ...getting final cells" % (counter))
-            sys.stdout.flush()
+            print 'Page : ' + str(pdfPage) + '\nTable : ' + str(counter) + '...getting final cells',
             finalCells = getFinalCells(actualCells, pdfImage)
+            os.system('cls')
 
-            sys.stdout.write("\033[K")
-            sys.stdout.write("Table: %d ...getting column values" % (counter))
-            sys.stdout.flush()
+            print 'Page : ' + str(pdfPage) + '\nTable : ' + str(counter) + '...getting column values',
             columnValues = getColumnValues(imageData, finalCells, actualTable)
+            os.system('cls')
 
-            sys.stdout.write("\033[K")
-            sys.stdout.write("Table: %d ...getting header values" % (counter))
-            sys.stdout.flush()
+            print 'Page : ' + str(pdfPage) + '\nTable : ' + str(counter) + '...getting header values',
             headerZone, headerValues = getColumnNames(pdfImage, imageData, actualTable, actualCells, prevTableBottom)[0], getColumnNames(pdfImage, imageData, actualTable, actualCells, prevTableBottom)[1]
+            os.system('cls')
 
-            sys.stdout.write("\033[K")
-            sys.stdout.write("Table: %d ...getting parent header values" % (counter))
-            sys.stdout.flush()
+            print 'Page : ' + str(pdfPage) + '\nTable : ' + str(counter) + '...getting parent header values',
             parentHeaderValues = getParentHeaders(headerZone, imageData, actualTable, pdfImage)
+            os.system('cls')
 
-            sys.stdout.write("\033[K")
-            sys.stdout.write("Table: %d ...getting final combined header values" % (counter))
-            sys.stdout.flush()
+            print 'Page : ' + str(pdfPage) + '\nTable : ' + str(counter) + '...getting final combined header values',
             if parentHeaderValues is not None:
                 columnNames = []
                 for i in range(len(headerValues)):
@@ -368,10 +375,9 @@ for pdfPage in range(18, 19):
                     columnNames.append(finalHeaderValue.replace('\n', ' ').strip(' '))
             else:
                 columnNames = [headerValue.replace('\n', ' ').strip(' ') for headerValue in headerValues]
+            os.system('cls')
 
-            sys.stdout.write("\033[K")
-            sys.stdout.write("Table: %d \r...getting results into dataframes and exporting as txt" % (counter))
-            sys.stdout.flush()
+            print 'Page : ' + str(pdfPage) + '\nTable : ' + str(counter) + '...getting results into a dataframe',
             dataRows = []
             for i in range(len(columnValues[0])):
                 dataRow = []
@@ -382,9 +388,13 @@ for pdfPage in range(18, 19):
             columnNames = ['product_category'] + columnNames
             df = pd.DataFrame(data=dataRows, columns=columnNames)
             df.set_index('product_category', inplace=True)
-            print '\rTable : ' + str(counter) + '...exporting the dataframe',
-            fileName = directory + '\\OUTPUT\\%d_%d.txt' % (pdfPage, counter)
+            os.system('cls')
+
+            print 'Page : ' + str(pdfPage) + '\nTable : ' + str(counter) + '...exporting the dataframe',
+            fileName = directory + '\\OUTPUT_1\\%d_%d.txt' % (pdfPage, counter)
             df.to_csv(fileName, sep='\t', encoding='utf-8')
+            os.system('cls')
+
     except:
         print 'No Data'
         pass

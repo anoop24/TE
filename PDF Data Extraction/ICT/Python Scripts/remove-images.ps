@@ -1,0 +1,81 @@
+%!PS
+
+% Run as:
+%
+%      gs ..... -dFILTERIMAGE -dDELAYBIND -dWRITESYSTEMDICT \
+%                 ..... remove-images.ps <your-input-file>
+%
+% derived from Chris Liddell's original 'filter-obs.ps' script
+% Adapted by @pdfkungfoo (on Twitter)
+
+currentglobal true setglobal
+
+32 dict begin
+
+/debugprint     { systemdict /DUMPDEBUG .knownget { {print flush} if} 
+                {pop} ifelse } bind def
+
+/pushnulldevice {
+  systemdict exch .knownget not
+  {
+    //false
+  } if
+
+  {
+    gsave
+    matrix currentmatrix
+    nulldevice
+    setmatrix
+  } if
+} bind def
+
+/popnulldevice {
+  systemdict exch .knownget not
+  {
+    //false
+  } if
+  {
+    % this is hacky - some operators clear the current point
+    % i.e.
+    { currentpoint } stopped
+    { grestore }
+    { grestore moveto} ifelse
+  } if
+} bind def
+
+/sgd {systemdict exch get def} bind def
+
+systemdict begin
+
+/_image /image sgd
+/_imagemask /imagemask sgd
+/_colorimage /colorimage sgd
+
+/image {
+   (\nIMAGE\n) //debugprint exec /FILTERIMAGE //pushnulldevice exec
+  _image
+  /FILTERIMAGE //popnulldevice exec
+} bind def
+
+/imagemask
+{
+  (\nIMAGEMASK\n) //debugprint exec
+  /FILTERIMAGE //pushnulldevice exec
+  _imagemask
+  /FILTERIMAGE //popnulldevice exec
+} bind def
+
+/colorimage
+{
+  (\nCOLORIMAGE\n) //debugprint exec
+  /FILTERIMAGE //pushnulldevice exec
+  _colorimage
+  /FILTERIMAGE //popnulldevice exec
+} bind def
+
+end
+end
+
+.bindnow
+
+setglobal
